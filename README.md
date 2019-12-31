@@ -7,6 +7,7 @@ Projet "Oh My Food !"
 Réalisation d'un site web contenant les menus de 4 grands restaurants de renom parisiens.
 
 La première page sera composée de :
+
     - Un header contenant un menu et le logo de l'entreprise.
 
     - Une partie principale contenant une image pour chaque menu de chaque restaurant, en cliquant sur ces images, l'utilisateur sera redirigé vers une page contenant le menu en question. Les différentes images sur cette page auront une animation de zoom et de fondu qui s'activera au survol de la souris.

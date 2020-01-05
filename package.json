@@ -1,0 +1,22 @@
+{
+  "name": "oh_my_food",
+  "version": "1.0.0",
+  "description": "Website for menu's reservations for great restaurants",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AthomsLL/Oh_My_Food.git"
+  },
+  "author": "Athoms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AthomsLL/Oh_My_Food/issues"
+  },
+  "homepage": "https://github.com/AthomsLL/Oh_My_Food#readme"
+}

@@ -19,5 +19,5 @@ La première page sera composée de :
 
 Il y aura 4 pages (1 pour chaque menu de chaque restaurant),  les titres "Entrées", "Plats", "Desserts" devront se surligner de gauche à droite au survol de la souris.
 
-Le projet sera réalisé en mode mobile-first sauf contre-indication.
+Le projet sera réalisé en mode desktop first pour respecter les maquettes fournies.
 Le prépocesseur SASS sera utilisé pour le projet, installé et initialisé à l'aide de npm.

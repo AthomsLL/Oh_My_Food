@@ -1,0 +1,16 @@
+.section-menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+
+    .menus-item {
+        box-shadow: 0 0 1rem -.5rem #000;
+        overflow: hidden;
+
+        a {
+            cursor: pointer;
+            display: flex;
+        }
+    }
+}

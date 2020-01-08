@@ -9,6 +9,42 @@
 /*******************
 ***** FONT SIZE ***** 
 *******************/
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0); }
+  35% {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px); }
+  70% {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px); } }
+
+@keyframes loading {
+  from,
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0); }
+  50% {
+    transform: translateY(-1.5rem);
+    -webkit-transform: translateY(-1.5rem);
+    -moz-transform: translateY(-1.5rem);
+    -ms-transform: translateY(-1.5rem);
+    -o-transform: translateY(-1.5rem); } }
+
 html {
   font-size: 62.5%; }
 
@@ -72,11 +108,31 @@ td:not([align]), th:not([align]) {
 
 .section-soon {
   background-color: #579c87;
+  display: flex;
   border-radius: 1.5rem;
   padding: 1.5rem 5.5rem; }
   .section-soon p {
     color: #fdcb46;
+    display: inline-block;
     font-size: 3.5rem; }
+  .section-soon .soon__next {
+    align-items: center;
+    display: flex;
+    max-height: 4.5rem; }
+  .section-soon .soon__next > p {
+    margin-right: .5rem; }
+  .section-soon .soon {
+    font-size: 8rem;
+    margin-bottom: 3rem; }
+  .section-soon .soon--1 {
+    animation: loading 1s ease-in-out infinite;
+    -webkit-animation: loading 1s ease-in-out infinite; }
+  .section-soon .soon--2 {
+    animation: loading 1s 0.3s ease-in-out infinite;
+    -webkit-animation: loading 1s 0.3s ease-in-out infinite; }
+  .section-soon .soon--3 {
+    animation: loading 1s 0.6s ease-in-out infinite;
+    -webkit-animation: loading 1s 0.6s ease-in-out infinite; }
 
 .footer {
   align-items: center;
@@ -92,6 +148,9 @@ td:not([align]), th:not([align]) {
     color: #fdcb46;
     font-size: 1.8rem;
     text-decoration: none; }
+    .footer__link:hover {
+      animation: shake .2s 3 ease-in-out;
+      -webkit-animation: shake .2s 3 ease-in-out; }
 
 .heading {
   align-items: center;

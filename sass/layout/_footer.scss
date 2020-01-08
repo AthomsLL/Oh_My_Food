@@ -13,5 +13,10 @@
         color: $color-secondary-text;
         font-size: 1.8rem;
         text-decoration: none;
+
+        &:hover {
+            animation: shake .2s 3 ease-in-out;
+            -webkit-animation: shake .2s 3 ease-in-out;
+}
     }
 }

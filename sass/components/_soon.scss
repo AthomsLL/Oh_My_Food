@@ -1,10 +1,42 @@
 .section-soon {
     background-color: $color-primary;
+    display: flex;
     border-radius: 1.5rem;
     padding: 1.5rem 5.5rem;
     
     p {
         color: $color-secondary-text;
+        display: inline-block;
         font-size: 3.5rem;
+    }
+
+    .soon__next {
+        align-items: center;
+        display: flex;
+        max-height: 4.5rem;
+    }
+
+    .soon__next > p {
+        margin-right: .5rem;
+    }
+
+    .soon {
+        font-size: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    .soon--1 {
+        animation: loading 1s ease-in-out infinite;
+        -webkit-animation: loading 1s ease-in-out infinite;
+    }
+
+    .soon--2 {
+        animation: loading 1s 0.3s ease-in-out infinite;
+        -webkit-animation: loading 1s 0.3s ease-in-out infinite;
+    }
+
+    .soon--3 {
+        animation: loading 1s 0.6s ease-in-out infinite;
+        -webkit-animation: loading 1s 0.6s ease-in-out infinite;
     }
 }

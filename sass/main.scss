@@ -8,16 +8,16 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/menu1";
+@import "components/menu2";
+@import "components/menu3";
+@import "components/menu4";
 @import "components/section-menus";
 @import "components/soon";
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/main";
-@import "layout/menus";
 
 @import "pages/home";
-@import "pages/menu1";
-@import "pages/menu2";
-@import "pages/menu3";
-@import "pages/menu4";
+@import "pages/menus";

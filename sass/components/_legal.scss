@@ -1,0 +1,29 @@
+.legal {
+    background-color: $color-primary;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    color: $color-secondary-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 4rem;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+        font-size: $default-font-size;
+        padding: 0 4rem;
+        text-align: justify;
+
+        a {
+            color: $color-secondary-text;
+        }
+    }
+}

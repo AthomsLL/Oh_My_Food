@@ -94,6 +94,29 @@ td:not([align]), th:not([align]) {
 .u-margin-bottom-big {
   margin-bottom: 7rem; }
 
+.legal {
+  background-color: #579c87;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  color: #fdcb46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 4rem; }
+  .legal__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem; }
+  .legal__paragraph {
+    font-size: 1.6rem;
+    padding: 0 4rem;
+    text-align: justify; }
+    .legal__paragraph a {
+      color: #fdcb46; }
+
 .section-menus {
   display: flex;
   flex-wrap: wrap;
@@ -172,14 +195,13 @@ td:not([align]), th:not([align]) {
   height: 22vh;
   justify-content: center; }
 
-main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 15rem; }
-
 .main {
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 7rem 15rem; }
+
+.mentions {
+  display: flex;
+  justify-content: center;
+  padding: 7rem 30rem 13rem 30rem; }

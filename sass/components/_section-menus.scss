@@ -1,12 +1,13 @@
 .section-menus {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-evenly;
 
     .menus-item {
         box-shadow: 0 0 1rem -.5rem #000;
         overflow: hidden;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
 
         a {
             cursor: pointer;

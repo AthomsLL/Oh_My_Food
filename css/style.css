@@ -39,12 +39,24 @@
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0); }
-  50% {
+  40% {
     transform: translateY(-1.5rem);
     -webkit-transform: translateY(-1.5rem);
     -moz-transform: translateY(-1.5rem);
     -ms-transform: translateY(-1.5rem);
-    -o-transform: translateY(-1.5rem); } }
+    -o-transform: translateY(-1.5rem); }
+  65% {
+    transform: translateY(1rem);
+    -webkit-transform: translateY(1rem);
+    -moz-transform: translateY(1rem);
+    -ms-transform: translateY(1rem);
+    -o-transform: translateY(1rem); }
+  90% {
+    transform: translateY(-0.5rem);
+    -webkit-transform: translateY(-0.5rem);
+    -moz-transform: translateY(-0.5rem);
+    -ms-transform: translateY(-0.5rem);
+    -o-transform: translateY(-0.5rem); } }
 
 html {
   font-size: 62.5%; }
@@ -164,14 +176,14 @@ td:not([align]), th:not([align]) {
     font-size: 7rem;
     margin-bottom: 2.2rem; }
   .section-soon .soon--1 {
-    animation: loading 1s ease-in-out infinite;
-    -webkit-animation: loading 1s ease-in-out infinite; }
+    animation: loading 1.5s ease-in-out infinite;
+    -webkit-animation: loading 1.5s ease-in-out infinite; }
   .section-soon .soon--2 {
-    animation: loading 1s 0.3s ease-in-out infinite;
-    -webkit-animation: loading 1s 0.3s ease-in-out infinite; }
+    animation: loading 1.5s 1.6s ease-in-out infinite;
+    -webkit-animation: loading 1.5s 1.6s ease-in-out infinite; }
   .section-soon .soon--3 {
-    animation: loading 1s 0.6s ease-in-out infinite;
-    -webkit-animation: loading 1s 0.6s ease-in-out infinite; }
+    animation: loading 1.5s 1.7s ease-in-out infinite;
+    -webkit-animation: loading 1.5s 1.7s ease-in-out infinite; }
 
 .footer {
   align-items: center;

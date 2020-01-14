@@ -105,7 +105,10 @@ td:not([align]), th:not([align]) {
 
 /* MARGINS */
 .u-margin-bottom-big {
-  margin-bottom: 7rem; }
+  margin-bottom: 7rem !important; }
+
+.u-not-margin-right {
+  margin-right: 0 !important; }
 
 .legal {
   background-color: #fff;
@@ -130,6 +133,82 @@ td:not([align]), th:not([align]) {
     text-align: justify; }
     .legal__paragraph a {
       color: #000; }
+
+.content__menus--1 {
+  background-color: #fcdfdb;
+  color: #3d1319;
+  font-family: 'Caveat', cursive;
+  padding: 5rem; }
+  .content__menus--1 .fa-music {
+    background: linear-gradient(to right, #f15c61, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .content__menus--1 .content__menus-title > .fa-music {
+    font-size: 7rem; }
+  .content__menus--1 h3 {
+    font-size: 5rem;
+    margin-bottom: 2.5rem; }
+  .content__menus--1 h3,
+  .content__menus--1 h5 {
+    font-family: 'Devonshire', cursive; }
+  .content__menus--1 h4 {
+    font-size: 3rem; }
+  .content__menus--1 h4::before,
+  .content__menus--1 h4::after,
+  .content__menus--1 strong:hover:after {
+    background: #3d1319 !important; }
+  .content__menus--1 h5 {
+    font-size: 3rem; }
+  .content__menus--1 tr {
+    font-size: 2.2rem;
+    margin-bottom: 1rem; }
+  .content__menus--1 .menu1__footer {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .content__menus--1 .menu1__footer .fa-music {
+      font-size: 3rem;
+      margin-right: .7rem; }
+
+.content__menus--2 {
+  background-color: #fff5fe;
+  font-family: 'Gelasio', serif;
+  padding: 7rem 4rem 12rem 4rem; }
+  .content__menus--2 h3 {
+    background: linear-gradient(to right, #db8528, #8f5bfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Croissant One', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 5rem; }
+  .content__menus--2 h4 {
+    font-size: 2rem;
+    font-weight: 500; }
+  .content__menus--2 tr {
+    font-size: 1.6rem;
+    margin-bottom: 1.7rem; }
+  .content__menus--2 section:nth-of-type(1) {
+    color: #c67412; }
+    .content__menus--2 section:nth-of-type(1) h4::before,
+    .content__menus--2 section:nth-of-type(1) h4::after,
+    .content__menus--2 section:nth-of-type(1) strong:hover:after {
+      background: #c67412; }
+  .content__menus--2 section:nth-of-type(2) {
+    color: #a56799; }
+    .content__menus--2 section:nth-of-type(2) h4::before,
+    .content__menus--2 section:nth-of-type(2) h4::after,
+    .content__menus--2 section:nth-of-type(2) strong:hover:after {
+      background: #a56799; }
+  .content__menus--2 section:nth-of-type(3) {
+    color: #6e4ccc; }
+    .content__menus--2 section:nth-of-type(3) h4::before,
+    .content__menus--2 section:nth-of-type(3) h4::after,
+    .content__menus--2 section:nth-of-type(3) strong:hover:after {
+      background: #6e4ccc; }
+  .content__menus--2 .entrees__content,
+  .content__menus--2 .plats__content,
+  .content__menus--2 .desserts__content {
+    padding: 0 5rem; }
 
 .section-menus {
   display: flex;
@@ -223,3 +302,62 @@ td:not([align]), th:not([align]) {
   display: flex;
   justify-content: center;
   padding: 4.5rem 30rem 15rem 30rem; }
+
+main {
+  display: flex;
+  justify-content: center; }
+  main .container__menus {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 0 12rem 0;
+    max-width: 120rem; }
+    main .container__menus .heading__menus {
+      font-size: 5rem;
+      font-weight: 500;
+      margin-bottom: 3.5rem; }
+    main .container__menus .content__menus {
+      box-shadow: 0 0 2rem -1rem #000;
+      display: flex;
+      flex-direction: column; }
+      main .container__menus .content__menus-title {
+        align-items: center;
+        display: flex;
+        flex-direction: column; }
+      main .container__menus .content__menus section:not(:last-child) {
+        margin-bottom: 4rem; }
+      main .container__menus .content__menus table {
+        display: flex;
+        flex-direction: column; }
+      main .container__menus .content__menus tr {
+        display: flex;
+        justify-content: space-between; }
+        main .container__menus .content__menus tr .price {
+          padding-left: 4rem;
+          text-align: end; }
+  main h4 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem; }
+    main h4::before, main h4::after {
+      content: "";
+      flex-grow: 1;
+      height: .4rem; }
+    main h4::before {
+      margin-right: 3rem; }
+    main h4::after {
+      margin-left: 3rem; }
+    main h4 strong::after {
+      content: "";
+      display: block;
+      height: .3rem;
+      margin-top: .3rem;
+      transition: width .5s;
+      -webkit-transition: width .5s;
+      -moz-transition: width .5s;
+      -ms-transition: width .5s;
+      -o-transition: width .5s;
+      width: 0; }
+    main h4 strong:hover:after {
+      width: 100%; }

@@ -1,0 +1,57 @@
+.content__menus--1 {
+    background-color: $color-menu1-primary;
+    color: $color-menu1-primary-font;
+    font-family: 'Caveat', cursive;
+    padding: 5rem;
+
+    .fa-music {
+        background: linear-gradient(to right, $color-menu1-secondary-dark, $color-menu1-secondary-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .content__menus-title > .fa-music {
+        font-size: 7rem;
+    }
+
+    & h3 {
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    & h3, 
+    & h5 {
+        font-family: 'Devonshire', cursive;
+    }
+
+    & h4 {
+        font-size: 3rem;
+    }
+
+    & h4::before, 
+    & h4::after, 
+    & strong:hover:after {
+        background: $color-menu1-primary-font !important;
+    }
+
+    & h5 {
+        font-size: 3rem;
+    }
+
+    & tr {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu1__footer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        & .fa-music {
+            font-size: 3rem;
+            margin-right: .7rem;
+        }
+    }
+}
+

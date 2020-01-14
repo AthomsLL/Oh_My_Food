@@ -1,0 +1,60 @@
+.content__menus--2 {
+    background-color: $color-menu2-primary;
+    font-family: 'Gelasio', serif;
+    padding: 7rem 4rem 12rem 4rem;
+
+    & h3 {
+        background: linear-gradient(to right, $color-menu2-secondary-light, $color-menu2-secondary-dark);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Croissant One', cursive;
+        font-size: 3.5rem;
+        margin-bottom: 5rem;
+    }
+
+    & h4 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    & tr  {
+        font-size: $default-font-size;
+        margin-bottom: 1.7rem;
+    }
+
+    section:nth-of-type(1) {
+        color: $color-menu2-primary-font;
+
+        & h4::before, 
+        & h4::after, 
+        & strong:hover:after {
+            background: $color-menu2-primary-font;
+        }
+    }
+
+    section:nth-of-type(2) {
+        color: $color-menu2-secondary-font;
+
+        & h4::before, 
+        & h4::after, 
+        & strong:hover:after {
+            background: $color-menu2-secondary-font;
+        }
+    }
+
+    section:nth-of-type(3) {
+        color: $color-menu2-tertiary-font;
+
+        & h4::before, 
+        & h4::after, 
+        & strong:hover:after {
+            background: $color-menu2-tertiary-font;
+        }
+    }
+
+    .entrees__content, 
+    .plats__content, 
+    .desserts__content {
+        padding: 0 5rem;
+    }
+}

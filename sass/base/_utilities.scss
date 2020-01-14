@@ -3,5 +3,9 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 
 /* MARGINS */
 .u-margin-bottom-big {
-    margin-bottom: 7rem;
+    margin-bottom: 7rem !important;
+}
+
+.u-not-margin-right {
+    margin-right: 0 !important;
 }

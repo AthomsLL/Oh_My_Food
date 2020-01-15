@@ -35,7 +35,7 @@ main {
                 flex-direction: column;
             }
 
-            & tr {
+            & ul {
                 display: flex;
                 justify-content: space-between;
 
@@ -68,7 +68,8 @@ main {
             margin-left: 3rem;
         }
 
-        & strong::after {
+        & strong::after,
+        & span::after {
             content: "";
             display: block;
             height: .3rem;
@@ -81,7 +82,8 @@ main {
             width: 0;
         }
 
-        & strong:hover:after {
+        & strong:hover:after,
+        & span:hover:after {
             width: 100%;
         }
     }

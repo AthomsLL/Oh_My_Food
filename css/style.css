@@ -163,7 +163,7 @@ td:not([align]), th:not([align]) {
     background: #3d1319 !important; }
   .content__menus--1 h5 {
     font-size: 3rem; }
-  .content__menus--1 tr {
+  .content__menus--1 ul {
     font-size: 2.2rem;
     margin-bottom: 1rem; }
   .content__menus--1 .menu1__footer {
@@ -188,7 +188,7 @@ td:not([align]), th:not([align]) {
   .content__menus--2 h4 {
     font-size: 2rem;
     font-weight: 500; }
-  .content__menus--2 tr {
+  .content__menus--2 ul {
     font-size: 1.6rem;
     margin-bottom: 1.7rem; }
   .content__menus--2 section:nth-of-type(1) {
@@ -212,6 +212,69 @@ td:not([align]), th:not([align]) {
   .content__menus--2 .entrees__content,
   .content__menus--2 .plats__content,
   .content__menus--2 .desserts__content {
+    padding: 0 5rem; }
+
+.content__menus--3 {
+  background-color: #edefef;
+  font-family: 'Courgette', cursive;
+  font-weight: light;
+  padding: 7rem 4rem 12rem 4rem; }
+  .content__menus--3 h3 {
+    background: linear-gradient(to right, #0228dd, #0889fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    margin-bottom: 5rem; }
+  .content__menus--3 h4 {
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .content__menus--3 ul {
+    font-size: 1.6rem;
+    margin-bottom: 1.7rem; }
+  .content__menus--3 section:nth-of-type(1) h4::before,
+  .content__menus--3 section:nth-of-type(1) h4::after,
+  .content__menus--3 section:nth-of-type(1) span:hover:after {
+    background: #0228dd; }
+  .content__menus--3 section:nth-of-type(2) h4::before,
+  .content__menus--3 section:nth-of-type(2) h4::after,
+  .content__menus--3 section:nth-of-type(2) span:hover:after {
+    background: #0670f3; }
+  .content__menus--3 section:nth-of-type(3) h4::before,
+  .content__menus--3 section:nth-of-type(3) h4::after,
+  .content__menus--3 section:nth-of-type(3) span:hover:after {
+    background: #229df9; }
+  .content__menus--3 .entrees__content,
+  .content__menus--3 .plats__content,
+  .content__menus--3 .desserts__content {
+    padding: 0 5rem; }
+
+.content__menus--4 {
+  font-family: 'Courgette', cursive;
+  font-weight: light;
+  padding: 7rem 4rem 12rem 4rem; }
+  .content__menus--4 h3 {
+    background: linear-gradient(to right, #45993e, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 7rem;
+    margin-bottom: 5rem; }
+  .content__menus--4 h4 {
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .content__menus--4 ul {
+    font-size: 1.6rem;
+    margin-bottom: 1.7rem; }
+  .content__menus--4 section h4::before {
+    background: linear-gradient(to right, #45993e, #beff7f); }
+  .content__menus--4 section h4::after {
+    background: linear-gradient(to right, #beff7f, #45993e); }
+  .content__menus--4 section span:hover:after {
+    background: #beff7f; }
+  .content__menus--4 .entrees__content,
+  .content__menus--4 .plats__content,
+  .content__menus--4 .desserts__content {
     padding: 0 5rem; }
 
 .section-menus {
@@ -275,7 +338,7 @@ td:not([align]), th:not([align]) {
   background-color: #579c87;
   bottom: 0;
   display: flex;
-  height: 11vh;
+  height: 9vh;
   justify-content: space-between;
   padding: 0 2.5rem;
   position: fixed;
@@ -292,7 +355,7 @@ td:not([align]), th:not([align]) {
   align-items: center;
   background-color: #579c87;
   display: flex;
-  height: 22vh;
+  height: 16vh;
   justify-content: center; }
 
 .main {
@@ -335,10 +398,10 @@ main {
       main .container__menus .content__menus table {
         display: flex;
         flex-direction: column; }
-      main .container__menus .content__menus tr {
+      main .container__menus .content__menus ul {
         display: flex;
         justify-content: space-between; }
-        main .container__menus .content__menus tr .price {
+        main .container__menus .content__menus ul .price {
           padding-left: 4rem;
           text-align: end; }
   main h4 {
@@ -354,7 +417,8 @@ main {
       margin-right: 3rem; }
     main h4::after {
       margin-left: 3rem; }
-    main h4 strong::after {
+    main h4 strong::after,
+    main h4 span::after {
       content: "";
       display: block;
       height: .3rem;
@@ -365,5 +429,6 @@ main {
       -ms-transition: width .5s;
       -o-transition: width .5s;
       width: 0; }
-    main h4 strong:hover:after {
+    main h4 strong:hover:after,
+    main h4 span:hover:after {
       width: 100%; }

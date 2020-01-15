@@ -1,0 +1,45 @@
+.content__menus--4 {
+    font-family: 'Courgette', cursive;
+    font-weight: light;
+    padding: 7rem 4rem 12rem 4rem;
+
+    & h3 {
+        background: linear-gradient(to right, $color-menu4-primary-dark, $color-menu4-primary-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 7rem;
+        margin-bottom: 5rem;
+    }
+
+    & h4 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    & ul  {
+        font-size: $default-font-size;
+        margin-bottom: 1.7rem;
+    }
+
+    section {
+
+        & h4::before {
+            background: linear-gradient(to right, $color-menu4-primary-dark, $color-menu4-primary-light);
+        }
+
+        & h4::after {
+            background: linear-gradient(to right, $color-menu4-primary-light, $color-menu4-primary-dark);
+        }
+
+        & span:hover:after {
+            background: $color-menu4-primary-light;
+        }
+    }
+
+    .entrees__content, 
+    .plats__content, 
+    .desserts__content {
+        padding: 0 5rem;
+    }
+}

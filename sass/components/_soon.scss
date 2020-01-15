@@ -3,11 +3,15 @@
     display: flex;
     border-radius: 1.5rem;
     padding: 1.5rem 5.5rem;
-    
+
+    & h2, 
     p {
         color: $color-secondary-text;
-        display: inline-block;
         font-size: 3.5rem;
+    }
+    
+    p {
+        display: inline-block;
     }
 
     .soon__next {

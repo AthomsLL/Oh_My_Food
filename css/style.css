@@ -392,6 +392,8 @@ main {
         align-items: center;
         display: flex;
         flex-direction: column; }
+        main .container__menus .content__menus-title h3 {
+          padding: 0 1.5rem; }
       main .container__menus .content__menus section:not(:last-child) {
         margin-bottom: 4rem; }
       main .container__menus .content__menus table {

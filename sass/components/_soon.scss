@@ -2,7 +2,11 @@
     background-color: $color-primary;
     display: flex;
     border-radius: 1.5rem;
-    padding: 1.5rem 5.5rem;
+    padding: 1.6rem 5.5rem;
+
+    @include responsive(smartphone) {
+        padding: 1em 2.5em;
+    }
 
     & h2, 
     p {
@@ -22,6 +26,12 @@
 
     .soon__next > p {
         margin-right: .5rem;
+    }
+
+    .soon__loading {
+        @include responsive(smartphone) {
+            display: flex;
+        }
     }
 
     .soon {

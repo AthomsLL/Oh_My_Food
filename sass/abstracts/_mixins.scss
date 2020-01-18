@@ -1,0 +1,32 @@
+/* MEDIA QUERY MANAGER
+
+/*
+0 - 600px:      phone - Téléphone
+600 - 900px:    tab-port - Tablette portrait
+900 - 1200px:   tab-land - Tablette paysage
+[1200 - 1800px] est le style normal appliqué
+1800px+ :      big-desktop - Grands écrans
+
+$breakpoint choix arguments
+- smartphone
+- tablette-portrait
+- tablette-paysage
+- big-desktop
+
+1em = 16px
+*/
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == smartphone {
+        @media (max-width: 37.5em) { @content };    // 600px
+    }
+    @if $breakpoint == tablette-portrait {
+        @media (max-width: 56.25em) { @content };     // 900px
+    }
+    @if $breakpoint == tablette-paysage {
+        @media (max-width: 75em) { @content };    // 1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content };    // 1800px
+    }
+}

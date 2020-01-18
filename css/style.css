@@ -1,3 +1,21 @@
+@charset "UTF-8";
+/* MEDIA QUERY MANAGER
+
+/*
+0 - 600px:      phone - Téléphone
+600 - 900px:    tab-port - Tablette portrait
+900 - 1200px:   tab-land - Tablette paysage
+[1200 - 1800px] est le style normal appliqué
+1800px+ :      big-desktop - Grands écrans
+
+$breakpoint choix arguments
+- smartphone
+- tablette-portrait
+- tablette-paysage
+- big-desktop
+
+1em = 16px
+*/
 /*****************
 ***** COLORS ***** 
 *****************/
@@ -7,6 +25,7 @@
 /* MENU 3 : "LE DELICE DES PAPILLES" */
 /* MENU 4 : "LA PALETTE DU GOUT" */
 /* PAGE MENTIONS LEGALES */
+/* H2 COLOR MENUS PAGES */
 /*******************
 ***** FONT SIZE ***** 
 *******************/
@@ -64,6 +83,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -128,10 +156,22 @@ td:not([align]), th:not([align]) {
   align-items: center;
   padding: 3rem;
   max-width: 80rem; }
+  @media (max-width: 37.5em) {
+    .legal {
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      box-shadow: none;
+      padding: 2.5em 0; } }
   .legal__title {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2rem; }
+    @media (max-width: 37.5em) {
+      .legal__title {
+        font-size: 2.3em; } }
   .legal__paragraph {
     font-size: 1.6rem;
     padding: 0 4rem;
@@ -153,15 +193,21 @@ td:not([align]), th:not([align]) {
   .content__menus--1 h3 {
     font-size: 5rem;
     margin-bottom: 2.5rem; }
+    @media (max-width: 37.5em) {
+      .content__menus--1 h3 {
+        font-size: 4.5em; } }
   .content__menus--1 h3,
   .content__menus--1 h5 {
     font-family: 'Devonshire', cursive; }
   .content__menus--1 h4 {
     font-size: 3rem; }
+    @media (max-width: 37.5em) {
+      .content__menus--1 h4 {
+        font-size: 2.7em; } }
   .content__menus--1 h4::before,
   .content__menus--1 h4::after,
   .content__menus--1 strong:hover:after {
-    background: #3d1319 !important; }
+    background: #3d1319; }
   .content__menus--1 h5 {
     font-size: 3rem; }
   .content__menus--1 ul {
@@ -179,19 +225,32 @@ td:not([align]), th:not([align]) {
   background-color: #fff5fe;
   font-family: 'Gelasio', serif;
   padding: 7rem 4rem 12rem 4rem; }
+  @media (max-width: 37.5em) {
+    .content__menus--2 {
+      padding: 5em 2em; } }
   .content__menus--2 h3 {
     background: linear-gradient(to right, #db8528, #8f5bfe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Croissant One', cursive;
     font-size: 3.5rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .content__menus--2 h3 {
+        font-size: 2.7em; } }
   .content__menus--2 h4 {
     font-size: 2rem;
     font-weight: 500; }
+    @media (max-width: 37.5em) {
+      .content__menus--2 h4 {
+        font-size: 1.7em; } }
   .content__menus--2 ul {
     font-size: 1.6rem;
     margin-bottom: 1.7rem; }
+    @media (max-width: 37.5em) {
+      .content__menus--2 ul {
+        font-size: 1.5em; } }
   .content__menus--2 section:nth-of-type(1) {
     color: #c67412; }
     .content__menus--2 section:nth-of-type(1) h4::before,
@@ -214,18 +273,30 @@ td:not([align]), th:not([align]) {
   .content__menus--2 .plats__content,
   .content__menus--2 .desserts__content {
     padding: 0 5rem; }
+    @media (max-width: 37.5em) {
+      .content__menus--2 .entrees__content,
+      .content__menus--2 .plats__content,
+      .content__menus--2 .desserts__content {
+        padding: 0 3em; } }
 
 .content__menus--3 {
   background-color: #edefef;
   font-family: 'Courgette', cursive;
   padding: 7rem 4rem 12rem 4rem; }
+  @media (max-width: 37.5em) {
+    .content__menus--3 {
+      padding: 5em 2em; } }
   .content__menus--3 h3 {
     background: linear-gradient(to right, #0228dd, #0889fb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Dancing Script', cursive;
     font-size: 6rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .content__menus--3 h3 {
+        font-size: 4.2em; } }
   .content__menus--3 h4 {
     font-size: 2rem;
     margin-bottom: 3rem; }
@@ -248,17 +319,29 @@ td:not([align]), th:not([align]) {
   .content__menus--3 .plats__content,
   .content__menus--3 .desserts__content {
     padding: 0 5rem; }
+    @media (max-width: 37.5em) {
+      .content__menus--3 .entrees__content,
+      .content__menus--3 .plats__content,
+      .content__menus--3 .desserts__content {
+        padding: 0 3em; } }
 
 .content__menus--4 {
   font-family: 'Courgette', cursive;
   padding: 7rem 4rem 12rem 4rem; }
+  @media (max-width: 37.5em) {
+    .content__menus--4 {
+      padding: 5em 2em; } }
   .content__menus--4 h3 {
     background: linear-gradient(to right, #45993e, #beff7f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Kaushan Script', cursive;
     font-size: 7rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .content__menus--4 h3 {
+        font-size: 4.4em; } }
   .content__menus--4 h4 {
     font-size: 2rem;
     margin-bottom: 3rem; }
@@ -275,6 +358,11 @@ td:not([align]), th:not([align]) {
   .content__menus--4 .plats__content,
   .content__menus--4 .desserts__content {
     padding: 0 5rem; }
+    @media (max-width: 37.5em) {
+      .content__menus--4 .entrees__content,
+      .content__menus--4 .plats__content,
+      .content__menus--4 .desserts__content {
+        padding: 0 3em; } }
 
 .section-menus {
   display: flex;
@@ -283,8 +371,10 @@ td:not([align]), th:not([align]) {
   .section-menus .menus-item {
     box-shadow: 0 0 1rem -.5rem #000;
     overflow: hidden;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem; }
+    margin: 0 2.5rem 7rem 2.5rem; }
+    @media (max-width: 37.5em) {
+      .section-menus .menus-item {
+        margin-bottom: 3.5em; } }
     .section-menus .menus-item a {
       cursor: pointer;
       display: flex; }
@@ -306,7 +396,10 @@ td:not([align]), th:not([align]) {
   background-color: #579c87;
   display: flex;
   border-radius: 1.5rem;
-  padding: 1.5rem 5.5rem; }
+  padding: 1.6rem 5.5rem; }
+  @media (max-width: 37.5em) {
+    .section-soon {
+      padding: 1em 2.5em; } }
   .section-soon h2,
   .section-soon p {
     color: #fdcb46;
@@ -319,6 +412,9 @@ td:not([align]), th:not([align]) {
     max-height: 4.5rem; }
   .section-soon .soon__next > p {
     margin-right: .5rem; }
+  @media (max-width: 37.5em) {
+    .section-soon .soon__loading {
+      display: flex; } }
   .section-soon .soon {
     font-size: 7rem;
     margin-bottom: 2.2rem; }
@@ -342,6 +438,9 @@ td:not([align]), th:not([align]) {
   padding: 0 2.5rem;
   position: fixed;
   width: 100%; }
+  @media (max-width: 37.5em) {
+    .footer {
+      padding: 0 1.5em; } }
   .footer__link {
     color: #fdcb46;
     font-size: 1.8rem;
@@ -356,6 +455,8 @@ td:not([align]), th:not([align]) {
   display: flex;
   height: 16vh;
   justify-content: center; }
+  .heading__primary {
+    margin: 2rem 3rem; }
 
 .main {
   align-items: center;
@@ -364,12 +465,18 @@ td:not([align]), th:not([align]) {
   padding: 7rem 0;
   margin: 0 auto;
   max-width: 90rem; }
+  @media (max-width: 37.5em) {
+    .main {
+      padding: 3.3em 0; } }
 
 .mentions {
   background-color: #d1d1d1;
   display: flex;
   justify-content: center;
-  padding: 5rem 0 13.5rem 0; }
+  padding: 5rem 0 10rem 0; }
+  @media (max-width: 37.5em) {
+    .mentions {
+      padding: 0 0 6em 0; } }
 
 main {
   display: flex;
@@ -380,10 +487,17 @@ main {
     flex-direction: column;
     margin: 6rem 0 12rem 0;
     max-width: 120rem; }
+    @media (max-width: 37.5em) {
+      main .container__menus {
+        margin: 4em 0 6.5em 0; } }
     main .container__menus .heading__menus {
       font-size: 5rem;
       font-weight: 500;
       margin-bottom: 3.5rem; }
+      @media (max-width: 37.5em) {
+        main .container__menus .heading__menus {
+          color: #ccc;
+          font-size: 3.5em; } }
     main .container__menus .content__menus {
       box-shadow: 0 0 2rem -1rem #000;
       display: flex;
@@ -416,8 +530,14 @@ main {
       height: .4rem; }
     main h4::before {
       margin-right: 3rem; }
+      @media (max-width: 37.5em) {
+        main h4::before {
+          margin-right: .7em; } }
     main h4::after {
       margin-left: 3rem; }
+      @media (max-width: 37.5em) {
+        main h4::after {
+          margin-left: .7em; } }
     main h4 strong::after,
     main h4 span::after {
       content: "";

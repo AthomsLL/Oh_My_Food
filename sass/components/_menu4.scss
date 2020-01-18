@@ -2,6 +2,10 @@
     font-family: 'Courgette', cursive;
     padding: 7rem 4rem 12rem 4rem;
 
+    @include responsive(smartphone) {
+        padding: 5em 2em;
+    }
+
     & h3 {
         background: linear-gradient(to right, $color-menu4-primary-dark, $color-menu4-primary-light);
         -webkit-background-clip: text;
@@ -9,6 +13,11 @@
         font-family: 'Kaushan Script', cursive;
         font-size: 7rem;
         margin-bottom: 5rem;
+        text-align: center;
+
+        @include responsive(smartphone) {
+            font-size: 4.4em;
+        }
     }
 
     & h4 {
@@ -40,5 +49,9 @@
     .plats__content, 
     .desserts__content {
         padding: 0 5rem;
+
+        @include responsive(smartphone) {
+            padding: 0 3em;
+        }
     }
 }

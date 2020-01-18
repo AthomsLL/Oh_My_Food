@@ -8,11 +8,20 @@ main {
         flex-direction: column;
         margin: 6rem 0 12rem 0;
         max-width: 120rem;
+
+        @include responsive(smartphone) {
+            margin: 4em 0 6.5em 0;
+        }
     
         .heading__menus {
             font-size: 5rem;
             font-weight: 500;
             margin-bottom: 3.5rem;
+
+            @include responsive(smartphone) {
+                color: $color-phone-grey-light;
+                font-size: 3.5em;
+            }
         }
 
         .content__menus {
@@ -66,10 +75,18 @@ main {
 
         &::before {
             margin-right: 3rem;
+
+            @include responsive(smartphone) {
+                margin-right: .7em;
+            }
         }
 
         &::after {
             margin-left: 3rem;
+
+            @include responsive(smartphone) {
+                margin-left:.7em;
+            }
         }
 
         & strong::after,

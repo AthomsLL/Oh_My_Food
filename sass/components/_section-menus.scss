@@ -6,8 +6,11 @@
     .menus-item {
         box-shadow: 0 0 1rem -.5rem #000;
         overflow: hidden;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
+        margin: 0 2.5rem 7rem 2.5rem;
+
+        @include responsive(smartphone) {
+            margin-bottom: 3.5em;
+        }
 
         a {
             cursor: pointer;

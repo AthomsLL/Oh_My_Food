@@ -3,6 +3,10 @@
     font-family: 'Gelasio', serif;
     padding: 7rem 4rem 12rem 4rem;
 
+    @include responsive(smartphone) {
+        padding: 5em 2em;
+    }
+
     & h3 {
         background: linear-gradient(to right, $color-menu2-secondary-light, $color-menu2-secondary-dark);
         -webkit-background-clip: text;
@@ -10,16 +14,29 @@
         font-family: 'Croissant One', cursive;
         font-size: 3.5rem;
         margin-bottom: 5rem;
+        text-align: center;
+
+        @include responsive(smartphone) {
+            font-size: 2.7em;
+        }
     }
 
     & h4 {
         font-size: 2rem;
         font-weight: 500;
+
+        @include responsive(smartphone) {
+            font-size: 1.7em;
+        }
     }
 
     & ul  {
         font-size: $default-font-size;
         margin-bottom: 1.7rem;
+
+        @include responsive(smartphone) {
+            font-size: 1.5em;
+        }
     }
 
     section:nth-of-type(1) {
@@ -56,5 +73,9 @@
     .plats__content, 
     .desserts__content {
         padding: 0 5rem;
+
+        @include responsive(smartphone) {
+            padding: 0 3em;
+        }
     }
 }

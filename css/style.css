@@ -196,7 +196,7 @@ td:not([align]), th:not([align]) {
     margin-bottom: 2.5rem; }
     @media (max-width: 37.5em) {
       .content__menus--1 h3 {
-        font-size: 4.5em; } }
+        font-size: 3.3em; } }
   .content__menus--1 h3,
   .content__menus--1 h5 {
     font-family: 'Devonshire', cursive; }
@@ -245,7 +245,7 @@ td:not([align]), th:not([align]) {
     font-weight: 500; }
     @media (max-width: 37.5em) {
       .content__menus--2 h4 {
-        font-size: 1.7em; } }
+        font-size: 1.5em; } }
   .content__menus--2 ul {
     font-size: 1.6rem;
     margin-bottom: 1.7rem; }
@@ -498,7 +498,7 @@ main {
       @media (max-width: 37.5em) {
         main .container__menus .heading__menus {
           color: #ccc;
-          font-size: 3.5em; } }
+          font-size: 2.8em; } }
     main .container__menus .content__menus {
       box-shadow: 0 0 2rem -1rem #000;
       display: flex;
@@ -506,7 +506,8 @@ main {
       main .container__menus .content__menus-title {
         align-items: center;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        text-align: center; }
         main .container__menus .content__menus-title h3 {
           padding: 0 1.5rem; }
       main .container__menus .content__menus section:not(:last-child) {

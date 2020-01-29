@@ -7,7 +7,10 @@
     .fa-music {
         background: linear-gradient(to right, $color-menu1-secondary-dark, $color-menu1-secondary-light);
         -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
     }
 
     .content__menus-title > .fa-music {
@@ -38,7 +41,7 @@
 
     & h4::before, 
     & h4::after, 
-    & strong:hover:after {
+    & span:hover:after {
         background: $color-menu1-primary-font;
     }
 

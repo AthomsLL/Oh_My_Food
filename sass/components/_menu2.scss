@@ -10,7 +10,10 @@
     & h3 {
         background: linear-gradient(to right, $color-menu2-secondary-light, $color-menu2-secondary-dark);
         -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
         font-family: 'Croissant One', cursive;
         font-size: 3.5rem;
         margin-bottom: 5rem;
@@ -44,7 +47,7 @@
 
         & h4::before, 
         & h4::after, 
-        & strong:hover:after {
+        & span:hover:after {
             background: $color-menu2-primary-font;
         }
     }
@@ -54,7 +57,7 @@
 
         & h4::before, 
         & h4::after, 
-        & strong:hover:after {
+        & span:hover:after {
             background: $color-menu2-secondary-font;
         }
     }
@@ -64,7 +67,7 @@
 
         & h4::before, 
         & h4::after, 
-        & strong:hover:after {
+        & span:hover:after {
             background: $color-menu2-tertiary-font;
         }
     }

@@ -188,7 +188,10 @@ td:not([align]), th:not([align]) {
   .content__menus--1 .fa-music {
     background: linear-gradient(to right, #f15c61, #f6916a);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; }
   .content__menus--1 .content__menus-title > .fa-music {
     font-size: 7rem; }
   .content__menus--1 h3 {
@@ -207,7 +210,7 @@ td:not([align]), th:not([align]) {
         font-size: 2.7em; } }
   .content__menus--1 h4::before,
   .content__menus--1 h4::after,
-  .content__menus--1 strong:hover:after {
+  .content__menus--1 span:hover:after {
     background: #3d1319; }
   .content__menus--1 h5 {
     font-size: 3rem; }
@@ -232,7 +235,10 @@ td:not([align]), th:not([align]) {
   .content__menus--2 h3 {
     background: linear-gradient(to right, #db8528, #8f5bfe);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     font-family: 'Croissant One', cursive;
     font-size: 3.5rem;
     margin-bottom: 5rem;
@@ -256,19 +262,19 @@ td:not([align]), th:not([align]) {
     color: #c67412; }
     .content__menus--2 section:nth-of-type(1) h4::before,
     .content__menus--2 section:nth-of-type(1) h4::after,
-    .content__menus--2 section:nth-of-type(1) strong:hover:after {
+    .content__menus--2 section:nth-of-type(1) span:hover:after {
       background: #c67412; }
   .content__menus--2 section:nth-of-type(2) {
     color: #a56799; }
     .content__menus--2 section:nth-of-type(2) h4::before,
     .content__menus--2 section:nth-of-type(2) h4::after,
-    .content__menus--2 section:nth-of-type(2) strong:hover:after {
+    .content__menus--2 section:nth-of-type(2) span:hover:after {
       background: #a56799; }
   .content__menus--2 section:nth-of-type(3) {
     color: #6e4ccc; }
     .content__menus--2 section:nth-of-type(3) h4::before,
     .content__menus--2 section:nth-of-type(3) h4::after,
-    .content__menus--2 section:nth-of-type(3) strong:hover:after {
+    .content__menus--2 section:nth-of-type(3) span:hover:after {
       background: #6e4ccc; }
   .content__menus--2 .entrees__content,
   .content__menus--2 .plats__content,
@@ -290,7 +296,10 @@ td:not([align]), th:not([align]) {
   .content__menus--3 h3 {
     background: linear-gradient(to right, #0228dd, #0889fb);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     font-family: 'Dancing Script', cursive;
     font-size: 6rem;
     margin-bottom: 5rem;
@@ -335,7 +344,10 @@ td:not([align]), th:not([align]) {
   .content__menus--4 h3 {
     background: linear-gradient(to right, #45993e, #beff7f);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     font-family: 'Kaushan Script', cursive;
     font-size: 7rem;
     margin-bottom: 5rem;
@@ -542,7 +554,6 @@ main {
       @media (max-width: 37.5em) {
         main h4::after {
           margin-left: .7em; } }
-    main h4 strong::after,
     main h4 span::after {
       content: "";
       display: block;
@@ -554,6 +565,5 @@ main {
       -ms-transition: width .5s;
       -o-transition: width .5s;
       width: 0; }
-    main h4 strong:hover:after,
     main h4 span:hover:after {
       width: 100%; }

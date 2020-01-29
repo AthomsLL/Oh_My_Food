@@ -10,7 +10,10 @@
     & h3 {
         background: linear-gradient(to right, $color-menu3-secondary-dark, $color-menu3-secondary-light);
         -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
         font-family: 'Dancing Script', cursive;
         font-size: 6rem;
         margin-bottom: 5rem;

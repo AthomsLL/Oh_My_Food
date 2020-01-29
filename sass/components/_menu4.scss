@@ -9,7 +9,10 @@
     & h3 {
         background: linear-gradient(to right, $color-menu4-primary-dark, $color-menu4-primary-light);
         -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
         font-family: 'Kaushan Script', cursive;
         font-size: 7rem;
         margin-bottom: 5rem;

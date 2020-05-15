@@ -382,28 +382,105 @@ td:not([align]), th:not([align]) {
   flex-wrap: wrap;
   justify-content: center; }
   .section-menus .menus-item {
+    align-items: center;
     box-shadow: 0 0 1rem -.5rem #000;
+    display: flex;
+    height: 50rem;
+    justify-content: center;
+    margin: 0 2.5rem 7rem 2.5rem;
     overflow: hidden;
-    margin: 0 2.5rem 7rem 2.5rem; }
+    width: 35rem; }
     @media (max-width: 37.5em) {
       .section-menus .menus-item {
         margin-bottom: 3.5em; } }
+    .section-menus .menus-item.menu1 {
+      background-color: #fcdfdb; }
+    .section-menus .menus-item.menu2 {
+      background-color: #fff5fe; }
+    .section-menus .menus-item.menu3 {
+      background-color: #edefef; }
     .section-menus .menus-item a {
       cursor: pointer;
-      display: flex; }
-      .section-menus .menus-item a .menus-item-img {
+      display: flex;
+      text-decoration: none; }
+      .section-menus .menus-item a .menus-item--fondu {
         transition: all .4s;
         -webkit-transition: all .4s;
         -moz-transition: all .4s;
         -ms-transition: all .4s;
         -o-transition: all .4s; }
-      .section-menus .menus-item a:hover .menus-item-img {
+      .section-menus .menus-item a:hover .menus-item--fondu {
         transform: scale(1.3);
         -webkit-transform: scale(1.3);
         -moz-transform: scale(1.3);
         -ms-transform: scale(1.3);
         -o-transform: scale(1.3);
         opacity: .7; }
+      .section-menus .menus-item a .menus-item--fondu {
+        text-align: center; }
+        .section-menus .menus-item a .menus-item--fondu .fa-music {
+          background: linear-gradient(to right, #f15c61, #f6916a);
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+          font-size: 7rem; }
+        .section-menus .menus-item a .menus-item--fondu .menu1__title, .section-menus .menus-item a .menus-item--fondu .menu1__text {
+          color: #3d1319; }
+        .section-menus .menus-item a .menus-item--fondu .menu1__title {
+          font-family: 'Devonshire', cursive;
+          font-size: 4rem;
+          margin-bottom: 2rem; }
+        .section-menus .menus-item a .menus-item--fondu .menu1__text {
+          font-family: 'Cabin', sans-serif;
+          font-size: 4rem;
+          text-transform: uppercase; }
+        .section-menus .menus-item a .menus-item--fondu .menu2__title {
+          background: linear-gradient(to right, #db8528, #8f5bfe);
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+          font-family: 'Croissant One', cursive;
+          font-size: 2.2rem;
+          margin-bottom: 2.5rem; }
+        .section-menus .menus-item a .menus-item--fondu .menu2__text {
+          color: #c67412;
+          font-family: 'Bitter', serif;
+          font-size: 4rem;
+          font-weight: 500; }
+        .section-menus .menus-item a .menus-item--fondu .menu3__title {
+          background: linear-gradient(to right, #0228dd, #0889fb);
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+          font-family: 'Dancing Script', cursive;
+          font-size: 3.5rem;
+          margin-bottom: 2.5rem;
+          padding: 1rem; }
+        .section-menus .menus-item a .menus-item--fondu .menu3__text {
+          color: #0889fb;
+          font-family: 'Kalam', cursive;
+          font-size: 5rem; }
+        .section-menus .menus-item a .menus-item--fondu .menu4__title {
+          background: linear-gradient(to right, #45993e, #beff7f);
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+          font-family: 'Kaushan Script', cursive;
+          font-size: 3.5rem;
+          margin-bottom: 2.5rem;
+          padding: 1rem; }
+        .section-menus .menus-item a .menus-item--fondu .menu4__text {
+          color: #72bf56;
+          font-family: 'Kalam', cursive;
+          font-size: 5rem; }
 
 .section-soon {
   background-color: #579c87;

@@ -4,19 +4,37 @@
     justify-content: center;
 
     .menus-item {
+        align-items: center;
         box-shadow: 0 0 1rem -.5rem #000;
-        overflow: hidden;
+        display: flex;
+        height: 50rem;
+        justify-content: center;
         margin: 0 2.5rem 7rem 2.5rem;
+        overflow: hidden;
+        width: 35rem;
 
         @include responsive(smartphone) {
             margin-bottom: 3.5em;
         }
 
+        &.menu1 {
+            background-color: $color-menu1-primary;
+        }
+
+        &.menu2 {
+            background-color: $color-menu2-primary;
+        }
+
+        &.menu3 {
+            background-color: $color-menu3-primary;
+        }
+
         a {
             cursor: pointer;
             display: flex;
+            text-decoration: none;
 
-            & .menus-item-img {
+            & .menus-item--fondu {
                 transition: all .4s;
                 -webkit-transition: all .4s;
                 -moz-transition: all .4s;
@@ -24,13 +42,100 @@
                 -o-transition: all .4s;
             }
 
-            &:hover .menus-item-img {
+            &:hover .menus-item--fondu {
                 transform: scale(1.3);
                 -webkit-transform: scale(1.3);
                 -moz-transform: scale(1.3);
                 -ms-transform: scale(1.3);
                 -o-transform: scale(1.3);
                 opacity: .7;
+            }
+
+            .menus-item--fondu {
+                text-align: center;
+                
+                & .fa-music {
+                    background: linear-gradient(to right, $color-menu1-secondary-dark, $color-menu1-secondary-light);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    font-size: 7rem;
+                }
+
+                & .menu1__title, & .menu1__text {
+                    color: $color-menu1-primary-font;
+                }
+
+                & .menu1__title {
+                    font-family: 'Devonshire', cursive;
+                    font-size: 4rem;
+                    margin-bottom: 2rem;
+                }
+
+                & .menu1__text {
+                    font-family: 'Cabin', sans-serif;
+                    font-size: 4rem;
+                    text-transform: uppercase;
+                }
+
+                & .menu2__title {
+                    background: linear-gradient(to right, $color-menu2-secondary-light, $color-menu2-secondary-dark);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    font-family: 'Croissant One', cursive;
+                    font-size: 2.2rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                & .menu2__text {
+                    color: $color-menu2-primary-font;
+                    font-family: 'Bitter', serif;
+                    font-size: 4rem;
+                    font-weight: 500;
+                }
+
+                & .menu3__title {
+                    background: linear-gradient(to right, $color-menu3-secondary-dark, $color-menu3-secondary-light);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 3.5rem;
+                    margin-bottom: 2.5rem;
+                    padding: 1rem;
+                }
+
+                & .menu3__text {
+                    color: $color-menu3-secondary-light;
+                    font-family: 'Kalam', cursive;
+                    font-size: 5rem;
+                }
+
+                & .menu4__title {
+                    background: linear-gradient(to right, $color-menu4-primary-dark, $color-menu4-primary-light);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    font-family: 'Kaushan Script', cursive;
+                    font-size: 3.5rem;
+                    margin-bottom: 2.5rem;
+                    padding: 1rem;
+                }
+
+                & .menu4__text {
+                    color: $color-menu4-secondary-dark;
+                    font-family: 'Kalam', cursive;
+                    font-size: 5rem;
+                }
             }
         }
     }
